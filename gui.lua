@@ -115,21 +115,4 @@ function M.init(modules)
             end
         end
     end)
-    -- Credit label
-    local creditLabel = Instance.new("TextLabel")
-    creditLabel.Name = "creditLabel"
-    creditLabel.Text = "credit by ye_nextg"
-    creditLabel.AnchorPoint = Vector2.new(0.5, 0)
-    creditLabel.Position = UDim2.new(0.5, 0, 1.1, 0) -- Position below the AI frame
-    creditLabel.Size = UDim2.new(0.8, 0, 0.3, 0)
-    creditLabel.FontFace = Font.new("rbxasset://fonts/families/TitilliumWeb.json", Enum.FontWeight.Regular, Enum.FontStyle.Normal)
-    creditLabel.TextSize = 14
-    creditLabel.TextColor3 = Color3.fromRGB(200, 200, 200)
-    creditLabel.BackgroundTransparency = 1
-    creditLabel.TextXAlignment = Enum.TextXAlignment.Center
-    creditLabel.Parent = aiFrame
 
-    print("[LOG]: GUI loaded.")
-end
-
-return M
